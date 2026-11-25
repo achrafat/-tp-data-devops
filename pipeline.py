@@ -46,7 +46,7 @@ def main():
     par_categorie = agreger_par_categorie(propre)
     charger(propre, SORTIE / "ventes_propres.csv") 
     charger(par_ville, SORTIE / "ca_par_ville.csv") 
-    charger(par_ville, SORTIE / "ca_par_categorie.csv") 
+    charger(par_categorie, SORTIE / "ca_par_categorie.csv") 
     print(f"{len(brut)} lignes lues, {len(propre)} lignes gardées.") 
     print(par_ville.to_string(index=False)) 
   
